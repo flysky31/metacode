@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="63" viewBox="0 0 56 63">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="" data-name="" width="56" height="63" transform="translate(3976 7634)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="stroke" data-name="logo" transform="translate(-3976 -7634)" stroke-width="30"  clip-path="url(#clip-path)">
+    <path id="s" data-name="s" fill="none" stroke="#000" stroke-miterlimit="10" d="M26,4a22.007,22.007,0,0,0-8.562,42.273A22.007,22.007,0,0,0,34.562,5.727,21.859,21.859,0,0,0,26,4m0-4A26,26,0,1,1,0,26,26,26,0,0,1,26,0Z" transform="translate(3989 7642)" fill="#fff"/>
+  </g>
+</svg>
+
