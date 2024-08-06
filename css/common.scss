@@ -50,7 +50,7 @@ body{
     
 
     &.on{
-        background: #3A4061;
+        background: rgba(0,0,0,.8);
         transition:background .5s;
         .nav {
             .nav-item {
@@ -83,7 +83,7 @@ body{
         right: -50%;
         transition: right .5s;
         z-index: 500;
-        background: #3A4061;
+        background: #000;
         &.on{
             right: 0;
             transition: right .5s;
@@ -91,7 +91,7 @@ body{
         .side_header{
             padding: 20px 20px;
             text-align: right;
-            border-bottom: 1px solid #888;
+      
             .btn-close{
                 opacity: 1;
             }
@@ -101,7 +101,6 @@ body{
             display: block;
             li{
                         
-                border-bottom: 1px solid #888;
                 padding: 15px 0;
                 &:last-child{
                     
@@ -112,8 +111,28 @@ body{
                 }
             }
         }
+        .sns{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0 0;
+            li{
+                margin: 0 10px 0 0;
+                &:last-child{
+                    margin: 0;
+                }
+                img{
+                    width: 32px;
+                }
+            }
+        }
     }
     .inner {
+        .logo{
+            img{
+                max-width: 300px;
+            }
+        }
         .offcanvas-backdrop{
             z-index: 1;
             &.fade{
@@ -124,10 +143,24 @@ body{
             color: #fff;
         }
         .contact_area{
-            border-radius: 100px;
-            border: 2px solid #fff;
+            // border-radius: 100px;
+            // border: 2px solid #fff;
             >a{
                 padding: 5px 20px;
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    margin: 0 5px 0 0;
+                    &:last-child{
+                        margin: 0;
+                    }
+                    img{
+                        width: 33px;
+                    }
+                }
             }
         }
         .navbar{
@@ -135,6 +168,7 @@ body{
                 li{
                     margin: 0 40px;
                     a.nav-link{
+                        position: relative;
                         padding: 0;
                         background: transparent;
                         &.active{
@@ -145,10 +179,12 @@ body{
                         i{
                             display: block;
                             width: 0%;
-                            height: 2px;
+                            height: 3px;
                             background: #fff;
                             border-radius: 0;
                             transition: all 1s;
+                            position: absolute;
+                            bottom: -28px;
                         }
                     }
                 }
@@ -163,9 +199,10 @@ body{
 
 
 #footer{
-    background: #3A4061;
+    background: #000;
     .inner{
         padding: 50px 0 0;
+        position: relative;
         .top{
             display: flex;
             justify-content: space-between;
@@ -225,15 +262,28 @@ body{
                 color: #fff;
             }
         }
-    }
     
+    }
+    .top_btn{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 55px;
+        a{
+            
+        }
+    }
 }
 
 
 @include breakpoint_desktop_1360{
     #header {
         .logo{
-            width: 230px;
+            padding: 10px 0px;
+            img{
+                // width: 230px;
+                height: 48px;
+            }
         }
         .inner {
             .navbar {
@@ -265,11 +315,23 @@ body{
     #header {
         height: 70px;
         .logo{
-            width: 200px;
+            img{
+                // width: 200px;
+                height: 40px;
+            }
         }
         .inner {
             .navbar{
                 padding: 5px 0 0;
+                .nav{
+                    li {
+                        a.nav-link {
+                            i{
+                                bottom: -18px;
+                            }
+                        }
+                    }
+                }
             }
             .contact_area {
                 >a{
@@ -279,6 +341,7 @@ body{
         }
         
     }
+    
     #footer {
         .inner {
             .foot_log{
@@ -297,7 +360,7 @@ body{
     
     #footer {
         .inner {
-            padding: 25px 0 0;
+            padding: 25px 0;
             #f_logo{
                 max-width: 250px;
             }
@@ -398,7 +461,10 @@ body{
     #header {
         height: 50px;
         .logo{
-            width: 150px;
+            img{
+                // width: 150px;
+                height: 30px;
+            }
         }
      #aside {
         width: 70%;
