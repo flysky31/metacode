@@ -42,7 +42,7 @@ body.on {
   align-items: center;
 }
 #header.on {
-  background: #3A4061;
+  background: rgba(0, 0, 0, 0.8);
   transition: background 0.5s;
 }
 #header .gnb_m {
@@ -68,7 +68,7 @@ body.on {
   right: -50%;
   transition: right 0.5s;
   z-index: 500;
-  background: #3A4061;
+  background: #000;
 }
 #header #aside.on {
   right: 0;
@@ -77,7 +77,6 @@ body.on {
 #header #aside .side_header {
   padding: 20px 20px;
   text-align: right;
-  border-bottom: 1px solid #888;
 }
 #header #aside .side_header .btn-close {
   opacity: 1;
@@ -86,12 +85,29 @@ body.on {
   display: block;
 }
 #header #aside .nav li {
-  border-bottom: 1px solid #888;
   padding: 15px 0;
 }
 #header #aside .nav li > a {
   display: block;
   color: #fff;
+}
+#header #aside .sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 0;
+}
+#header #aside .sns li {
+  margin: 0 10px 0 0;
+}
+#header #aside .sns li:last-child {
+  margin: 0;
+}
+#header #aside .sns li img {
+  width: 32px;
+}
+#header .inner .logo img {
+  max-width: 300px;
 }
 #header .inner .offcanvas-backdrop {
   z-index: 1;
@@ -102,17 +118,28 @@ body.on {
 #header .inner a {
   color: #fff;
 }
-#header .inner .contact_area {
-  border-radius: 100px;
-  border: 2px solid #fff;
-}
 #header .inner .contact_area > a {
   padding: 5px 20px;
+}
+#header .inner .contact_area ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .inner .contact_area ul li {
+  margin: 0 5px 0 0;
+}
+#header .inner .contact_area ul li:last-child {
+  margin: 0;
+}
+#header .inner .contact_area ul li img {
+  width: 33px;
 }
 #header .inner .navbar .nav li {
   margin: 0 40px;
 }
 #header .inner .navbar .nav li a.nav-link {
+  position: relative;
   padding: 0;
   background: transparent;
 }
@@ -122,17 +149,20 @@ body.on {
 #header .inner .navbar .nav li a.nav-link i {
   display: block;
   width: 0%;
-  height: 2px;
+  height: 3px;
   background: #fff;
   border-radius: 0;
   transition: all 1s;
+  position: absolute;
+  bottom: -28px;
 }
 
 #footer {
-  background: #3A4061;
+  background: #000;
 }
 #footer .inner {
   padding: 50px 0 0;
+  position: relative;
 }
 #footer .inner .top {
   display: flex;
@@ -191,10 +221,18 @@ body.on {
   width: 160px;
   color: #fff;
 }
-
+#footer .top_btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 55px;
+}
 @media (max-width: 1360px) {
   #header .logo {
-    width: 230px;
+    padding: 10px 0px;
+  }
+  #header .logo img {
+    height: 48px;
   }
   #header .inner .navbar .nav li {
     margin: 0 22px;
@@ -216,11 +254,14 @@ body.on {
   #header {
     height: 70px;
   }
-  #header .logo {
-    width: 200px;
+  #header .logo img {
+    height: 40px;
   }
   #header .inner .navbar {
     padding: 5px 0 0;
+  }
+  #header .inner .navbar .nav li a.nav-link i {
+    bottom: -18px;
   }
   #header .inner .contact_area > a {
     padding: 3px 15px;
@@ -234,7 +275,7 @@ body.on {
     font-size: 1rem;
   }
   #footer .inner {
-    padding: 25px 0 0;
+    padding: 25px 0;
   }
   #footer .inner #f_logo {
     max-width: 250px;
@@ -309,8 +350,8 @@ body.on {
   #header {
     height: 50px;
   }
-  #header .logo {
-    width: 150px;
+  #header .logo img {
+    height: 30px;
   }
   #header #aside {
     width: 70%;
