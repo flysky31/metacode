@@ -41,7 +41,7 @@
             #myVideo{
                 width: 100%;
                 height: 100vh;
-                background:transparent url('/img/videoposter2.jpg') no-repeat center center;
+                background:transparent url('../img/videoposter2.jpg') no-repeat center center;
                 -webkit-background-size:cover;
                 -moz-background-size:cover;
                 -o-background-size:cover;
@@ -326,7 +326,7 @@
                         align-items: center;
                         justify-content: end;
                         i{
-                            background: url("/img/dataicon.png")no-repeat;
+                            background: url("../img/dataicon.png")no-repeat;
                             background-size: 13px 13px;
                             width: 13px;
                             height: 13px;
@@ -380,14 +380,14 @@
           }
           .swiper-button-prev, 
           .swiper-container-rtl .swiper-button-next{
-                background: url("/img/swiper_left.png")no-repeat;
+                background: url("../img/swiper_left.png")no-repeat;
                 width: 29px;
                 height: 40px;
                 background-size: 20px auto;
           }
           .swiper-button-next, 
           .swiper-container-rtl .swiper-button-prev{
-            background: url("/img/swiper_right.png")no-repeat;
+            background: url("../img/swiper_right.png")no-repeat;
             width: 29px;
             height: 40px;
             background-size: 20px auto;
@@ -578,7 +578,7 @@
 }
 
 #contact{
-    background: url("/img/contact_bg.jpg")no-repeat center/cover;
+    background: url("../img/contact_bg.jpg")no-repeat center/cover;
     width: 100%;
     height: 1034px;
     padding: 100px 0;
@@ -952,7 +952,7 @@
             }
             .swiper-button-prev, 
             .swiper-container-rtl .swiper-button-next{
-                background: url("/img/swiper_left.png") no-repeat;
+                background: url("../img/swiper_left.png") no-repeat;
                 width: 29px;
                 height: 40px;
                 background-size: 20px auto;
@@ -960,7 +960,7 @@
             }
             .swiper-button-next, 
             .swiper-container-rtl .swiper-button-prev{
-                background: url("/img/swiper_right.png") no-repeat;
+                background: url("../img/swiper_right.png") no-repeat;
                 width: 29px;
                 height: 40px;
                 background-size: 20px auto;
