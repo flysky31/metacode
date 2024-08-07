@@ -4,5 +4,6 @@
 </p>
 
 부트스트랩을 활용한 원페이지 스크롤 반응형 웹사이트.<br>
-퍼블리싱 기여도 100%
-flysky31.github.io/metacode/
+퍼블리싱 기여도 100% <br>
+<a href="flysky31.github.io/metacode/" target="_blank">flysky31.github.io/metacode/</a>
+
