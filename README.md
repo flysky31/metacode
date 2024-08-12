@@ -5,5 +5,6 @@
 
 부트스트랩을 활용한 원페이지 스크롤 반응형 웹사이트.<br>
 퍼블리싱 기여도 100% <br>
+폼메일 및 게시판은 실제 웹사이트에서 그누보드5로 적용한 사이트입니다.<br>
 <a title="https://flysky31.github.io/metacode" role="link" target="_blank" rel="noopener noreferrer nofollow" class="text-bold" href="https://flysky31.github.io/metacode/">flysky31.github.io/metacode/</a>
 
